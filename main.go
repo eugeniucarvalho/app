@@ -7,7 +7,7 @@ import (
 
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, _ *http.Request) {
-		fmt.Fprint(w, "Hello! Your request was processed.")
+		fmt.Fprint(w, "Hello! Your request was processed. 1")
 	},
 	)
 	http.ListenAndServe(":8000", nil)
